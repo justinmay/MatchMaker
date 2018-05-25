@@ -14,6 +14,7 @@
 		CBD9245D20B781DF000E1F9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBD9245B20B781DF000E1F9B /* LaunchScreen.storyboard */; };
 		CBD9246820B781E0000E1F9B /* MatchMakeriOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD9246720B781E0000E1F9B /* MatchMakeriOSTests.swift */; };
 		CBD9247320B781E0000E1F9B /* MatchMakeriOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD9247220B781E0000E1F9B /* MatchMakeriOSUITests.swift */; };
+		CBD9248120B78296000E1F9B /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD9248020B78296000E1F9B /* MainPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		CBD9246E20B781E0000E1F9B /* MatchMakeriOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatchMakeriOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBD9247220B781E0000E1F9B /* MatchMakeriOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchMakeriOSUITests.swift; sourceTree = "<group>"; };
 		CBD9247420B781E0000E1F9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBD9248020B78296000E1F9B /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				CBD9245220B781DE000E1F9B /* AppDelegate.swift */,
 				CBD9245420B781DE000E1F9B /* ViewController.swift */,
+				CBD9248020B78296000E1F9B /* MainPageViewController.swift */,
 				CBD9245620B781DE000E1F9B /* Main.storyboard */,
 				CBD9245920B781DF000E1F9B /* Assets.xcassets */,
 				CBD9245B20B781DF000E1F9B /* LaunchScreen.storyboard */,
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBD9245520B781DE000E1F9B /* ViewController.swift in Sources */,
+				CBD9248120B78296000E1F9B /* MainPageViewController.swift in Sources */,
 				CBD9245320B781DE000E1F9B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
