@@ -14,7 +14,15 @@
 		CBD9245D20B781DF000E1F9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBD9245B20B781DF000E1F9B /* LaunchScreen.storyboard */; };
 		CBD9246820B781E0000E1F9B /* MatchMakeriOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD9246720B781E0000E1F9B /* MatchMakeriOSTests.swift */; };
 		CBD9247320B781E0000E1F9B /* MatchMakeriOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD9247220B781E0000E1F9B /* MatchMakeriOSUITests.swift */; };
-		CBD9248120B78296000E1F9B /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD9248020B78296000E1F9B /* MainPageViewController.swift */; };
+		CBD9248720BC6395000E1F9B /* WelcomeSequenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD9248620BC6395000E1F9B /* WelcomeSequenceViewController.swift */; };
+		CBD9248F20BD89B5000E1F9B /* WelcomeSegue2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD9248E20BD89B5000E1F9B /* WelcomeSegue2ViewController.swift */; };
+		CBD9249120BD8ABE000E1F9B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD9249020BD8ABE000E1F9B /* RegisterViewController.swift */; };
+		CBD924A720BDEA72000E1F9B /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD924A620BDEA72000E1F9B /* HomePageViewController.swift */; };
+		CBD924AF20BDF569000E1F9B /* LabelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD924AB20BDF569000E1F9B /* LabelFactory.swift */; };
+		CBD924B020BDF569000E1F9B /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD924AC20BDF569000E1F9B /* BaseView.swift */; };
+		CBD924B120BDF569000E1F9B /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD924AD20BDF569000E1F9B /* ButtonsView.swift */; };
+		CBD924B220BDF569000E1F9B /* TinderCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD924AE20BDF569000E1F9B /* TinderCard.swift */; };
+		CBD924B520BDF58A000E1F9B /* Swipeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD924B420BDF58A000E1F9B /* Swipeable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +56,15 @@
 		CBD9246E20B781E0000E1F9B /* MatchMakeriOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatchMakeriOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBD9247220B781E0000E1F9B /* MatchMakeriOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchMakeriOSUITests.swift; sourceTree = "<group>"; };
 		CBD9247420B781E0000E1F9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CBD9248020B78296000E1F9B /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		CBD9248620BC6395000E1F9B /* WelcomeSequenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeSequenceViewController.swift; sourceTree = "<group>"; };
+		CBD9248E20BD89B5000E1F9B /* WelcomeSegue2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeSegue2ViewController.swift; sourceTree = "<group>"; };
+		CBD9249020BD8ABE000E1F9B /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		CBD924A620BDEA72000E1F9B /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		CBD924AB20BDF569000E1F9B /* LabelFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelFactory.swift; sourceTree = "<group>"; };
+		CBD924AC20BDF569000E1F9B /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		CBD924AD20BDF569000E1F9B /* ButtonsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
+		CBD924AE20BDF569000E1F9B /* TinderCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinderCard.swift; sourceTree = "<group>"; };
+		CBD924B420BDF58A000E1F9B /* Swipeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swipeable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +115,14 @@
 		CBD9245120B781DE000E1F9B /* MatchMakeriOS */ = {
 			isa = PBXGroup;
 			children = (
+				CBD924B320BDF57D000E1F9B /* Actions */,
+				CBD924AA20BDF4B2000E1F9B /* FactoryElements */,
 				CBD9245220B781DE000E1F9B /* AppDelegate.swift */,
 				CBD9245420B781DE000E1F9B /* ViewController.swift */,
-				CBD9248020B78296000E1F9B /* MainPageViewController.swift */,
+				CBD9248620BC6395000E1F9B /* WelcomeSequenceViewController.swift */,
+				CBD9248E20BD89B5000E1F9B /* WelcomeSegue2ViewController.swift */,
+				CBD9249020BD8ABE000E1F9B /* RegisterViewController.swift */,
+				CBD924A620BDEA72000E1F9B /* HomePageViewController.swift */,
 				CBD9245620B781DE000E1F9B /* Main.storyboard */,
 				CBD9245920B781DF000E1F9B /* Assets.xcassets */,
 				CBD9245B20B781DF000E1F9B /* LaunchScreen.storyboard */,
@@ -126,6 +147,25 @@
 				CBD9247420B781E0000E1F9B /* Info.plist */,
 			);
 			path = MatchMakeriOSUITests;
+			sourceTree = "<group>";
+		};
+		CBD924AA20BDF4B2000E1F9B /* FactoryElements */ = {
+			isa = PBXGroup;
+			children = (
+				CBD924AC20BDF569000E1F9B /* BaseView.swift */,
+				CBD924AD20BDF569000E1F9B /* ButtonsView.swift */,
+				CBD924AB20BDF569000E1F9B /* LabelFactory.swift */,
+				CBD924AE20BDF569000E1F9B /* TinderCard.swift */,
+			);
+			path = FactoryElements;
+			sourceTree = "<group>";
+		};
+		CBD924B320BDF57D000E1F9B /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				CBD924B420BDF58A000E1F9B /* Swipeable.swift */,
+			);
+			path = Actions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,8 +300,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBD9245520B781DE000E1F9B /* ViewController.swift in Sources */,
-				CBD9248120B78296000E1F9B /* MainPageViewController.swift in Sources */,
 				CBD9245320B781DE000E1F9B /* AppDelegate.swift in Sources */,
+				CBD9249120BD8ABE000E1F9B /* RegisterViewController.swift in Sources */,
+				CBD9248F20BD89B5000E1F9B /* WelcomeSegue2ViewController.swift in Sources */,
+				CBD924A720BDEA72000E1F9B /* HomePageViewController.swift in Sources */,
+				CBD924AF20BDF569000E1F9B /* LabelFactory.swift in Sources */,
+				CBD924B120BDF569000E1F9B /* ButtonsView.swift in Sources */,
+				CBD924B520BDF58A000E1F9B /* Swipeable.swift in Sources */,
+				CBD924B020BDF569000E1F9B /* BaseView.swift in Sources */,
+				CBD924B220BDF569000E1F9B /* TinderCard.swift in Sources */,
+				CBD9248720BC6395000E1F9B /* WelcomeSequenceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +483,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F8D8S8BR4K;
 				INFOPLIST_FILE = MatchMakeriOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,6 +501,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F8D8S8BR4K;
 				INFOPLIST_FILE = MatchMakeriOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
