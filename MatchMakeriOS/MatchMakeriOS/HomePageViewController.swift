@@ -8,7 +8,16 @@
 
 import UIKit
 
-class HomePageViewController: UIViewController {
+protocol MyDelegate: class {
+    func onProfileTapped()
+}
+
+class HomePageViewController: UIViewController, MyDelegate {
+    
+    func onProfileTapped() {
+        self.performSegue(withIdentifier: "toProfile", sender: self)
+    }
+    
     lazy var tinderCard: TinderCard = {
         let tc = TinderCard()
         tc.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(swipeCard(sender:))))
@@ -18,6 +27,11 @@ class HomePageViewController: UIViewController {
     @objc func swipeCard(sender: UIPanGestureRecognizer) {
         sender.swipeView(tinderCard)
     }
+    
+    let tabs: TabView = {
+        let tv = TabView()
+        return tv
+    }()
     
     let buttonsContainer: ButtonsView = {
         let c = ButtonsView()
@@ -33,10 +47,15 @@ class HomePageViewController: UIViewController {
         //self.view.backgroundColor = UIColor.green
         self.view.addSubview(tinderCard)
         self.view.addSubview(buttonsContainer)
-        
+        self.view.addSubview(tabs)
+        tabs.delegate = self
         
         NSLayoutConstraint.activate([
-            tinderCard.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 80),
+            tabs.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            tabs.widthAnchor.constraint(equalTo: tinderCard.widthAnchor),
+            tabs.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            
+            tinderCard.topAnchor.constraint(equalTo: tabs.bottomAnchor, constant: 10),
             tinderCard.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.85),
             tinderCard.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             tinderCard.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.70),

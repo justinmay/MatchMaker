@@ -23,6 +23,8 @@
 		CBD924B120BDF569000E1F9B /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD924AD20BDF569000E1F9B /* ButtonsView.swift */; };
 		CBD924B220BDF569000E1F9B /* TinderCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD924AE20BDF569000E1F9B /* TinderCard.swift */; };
 		CBD924B520BDF58A000E1F9B /* Swipeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD924B420BDF58A000E1F9B /* Swipeable.swift */; };
+		CBD924B720BF0A52000E1F9B /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD924B620BF0A52000E1F9B /* TabView.swift */; };
+		CBD924BF20BF0F2A000E1F9B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD924BE20BF0F2A000E1F9B /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		CBD924AD20BDF569000E1F9B /* ButtonsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
 		CBD924AE20BDF569000E1F9B /* TinderCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinderCard.swift; sourceTree = "<group>"; };
 		CBD924B420BDF58A000E1F9B /* Swipeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swipeable.swift; sourceTree = "<group>"; };
+		CBD924B620BF0A52000E1F9B /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
+		CBD924BE20BF0F2A000E1F9B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,7 @@
 				CBD9248E20BD89B5000E1F9B /* WelcomeSegue2ViewController.swift */,
 				CBD9249020BD8ABE000E1F9B /* RegisterViewController.swift */,
 				CBD924A620BDEA72000E1F9B /* HomePageViewController.swift */,
+				CBD924BE20BF0F2A000E1F9B /* ProfileViewController.swift */,
 				CBD9245620B781DE000E1F9B /* Main.storyboard */,
 				CBD9245920B781DF000E1F9B /* Assets.xcassets */,
 				CBD9245B20B781DF000E1F9B /* LaunchScreen.storyboard */,
@@ -153,8 +158,9 @@
 			isa = PBXGroup;
 			children = (
 				CBD924AC20BDF569000E1F9B /* BaseView.swift */,
-				CBD924AD20BDF569000E1F9B /* ButtonsView.swift */,
 				CBD924AB20BDF569000E1F9B /* LabelFactory.swift */,
+				CBD924AD20BDF569000E1F9B /* ButtonsView.swift */,
+				CBD924B620BF0A52000E1F9B /* TabView.swift */,
 				CBD924AE20BDF569000E1F9B /* TinderCard.swift */,
 			);
 			path = FactoryElements;
@@ -309,6 +315,8 @@
 				CBD924B520BDF58A000E1F9B /* Swipeable.swift in Sources */,
 				CBD924B020BDF569000E1F9B /* BaseView.swift in Sources */,
 				CBD924B220BDF569000E1F9B /* TinderCard.swift in Sources */,
+				CBD924BF20BF0F2A000E1F9B /* ProfileViewController.swift in Sources */,
+				CBD924B720BF0A52000E1F9B /* TabView.swift in Sources */,
 				CBD9248720BC6395000E1F9B /* WelcomeSequenceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

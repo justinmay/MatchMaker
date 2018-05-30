@@ -359,10 +359,28 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="yzM-gX-ctg"/>
                     </view>
+                    <connections>
+                        <segue destination="DfM-m3-Xnl" kind="show" identifier="toProfile" id="MSu-DQ-QVN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vjH-A6-ft7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1308" y="171"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="LiJ-Zw-1ko">
+            <objects>
+                <viewController id="DfM-m3-Xnl" customClass="ProfileViewController" customModule="MatchMakeriOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PTI-a8-EEc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="cza-1q-OE0"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dRF-pS-0ub" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2066" y="170"/>
         </scene>
     </scenes>
     <resources>
