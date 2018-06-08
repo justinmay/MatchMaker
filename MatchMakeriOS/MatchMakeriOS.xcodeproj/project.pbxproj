@@ -25,6 +25,7 @@
 		CBD924B520BDF58A000E1F9B /* Swipeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD924B420BDF58A000E1F9B /* Swipeable.swift */; };
 		CBD924B720BF0A52000E1F9B /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD924B620BF0A52000E1F9B /* TabView.swift */; };
 		CBD924BF20BF0F2A000E1F9B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD924BE20BF0F2A000E1F9B /* ProfileViewController.swift */; };
+		CBD924C120C02291000E1F9B /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD924C020C02291000E1F9B /* MessagesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		CBD924B420BDF58A000E1F9B /* Swipeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swipeable.swift; sourceTree = "<group>"; };
 		CBD924B620BF0A52000E1F9B /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
 		CBD924BE20BF0F2A000E1F9B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		CBD924C020C02291000E1F9B /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				CBD9249020BD8ABE000E1F9B /* RegisterViewController.swift */,
 				CBD924A620BDEA72000E1F9B /* HomePageViewController.swift */,
 				CBD924BE20BF0F2A000E1F9B /* ProfileViewController.swift */,
+				CBD924C020C02291000E1F9B /* MessagesViewController.swift */,
 				CBD9245620B781DE000E1F9B /* Main.storyboard */,
 				CBD9245920B781DF000E1F9B /* Assets.xcassets */,
 				CBD9245B20B781DF000E1F9B /* LaunchScreen.storyboard */,
@@ -313,6 +316,7 @@
 				CBD924AF20BDF569000E1F9B /* LabelFactory.swift in Sources */,
 				CBD924B120BDF569000E1F9B /* ButtonsView.swift in Sources */,
 				CBD924B520BDF58A000E1F9B /* Swipeable.swift in Sources */,
+				CBD924C120C02291000E1F9B /* MessagesViewController.swift in Sources */,
 				CBD924B020BDF569000E1F9B /* BaseView.swift in Sources */,
 				CBD924B220BDF569000E1F9B /* TinderCard.swift in Sources */,
 				CBD924BF20BF0F2A000E1F9B /* ProfileViewController.swift in Sources */,

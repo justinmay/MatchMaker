@@ -54,9 +54,11 @@ class TabView: BaseView {
     }
     @objc func run() {
         print("run print")
+        self.delegate?.onHomeTapped()
     }
     
     @objc func chat() {
         print("chat print")
+        self.delegate?.onMessagesTapped()
     }
 }

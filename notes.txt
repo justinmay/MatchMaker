@@ -1,0 +1,17 @@
+ToDo 
+
+Back end
+0.5 create the database + decide on a template
+1. hook up the register page 
+2. hook up the sign in page 
+3. create a way to upload & store pictures 
+4. create an algorithim to calculate player score 
+5. get a data set on national tennis courts, their materials, their hours, lights, etc. 
+6. store chat data 
+7. store event data 
+
+
+Front end
+1. implement the chat feature
+2. implement the mapbox API to load in closest tennis courts 
+3. event creater inside the chat view 

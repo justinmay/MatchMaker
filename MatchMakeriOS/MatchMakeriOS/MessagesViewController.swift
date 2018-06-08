@@ -1,62 +1,58 @@
 //
-//  ProfileViewController.swift
+//  MessagesViewController.swift
 //  MatchMakeriOS
 //
-//  Created by Justin May on 5/30/18.
+//  Created by Justin May on 5/31/18.
 //  Copyright © 2018 Justin May. All rights reserved.
 //
 
 import UIKit
 
-class ProfileViewController: UIViewController, MyDelegate{
-    
-    @IBOutlet var profileView: UIView!
+class MessagesViewController: UIViewController, MyDelegate {
+
+    @IBOutlet var messagesView: UIView!
     
     let tabs: TabView = {
         let tv = TabView()
         return tv
     }()
     
+    //when profile is tapped
     func onProfileTapped() {
-        //do nothing
+        if var topController = UIApplication.shared.keyWindow?.rootViewController {
+            
+            while let presentedViewController = topController.presentedViewController {
+                topController = presentedViewController
+            }
+            
+            if topController.view == messagesView {
+                self.performSegue(withIdentifier: "message2profileSegue", sender: self)
+            }
+            // topController should now be your topmost view controller
+        }
     }
     
     func onMessagesTapped() {
+        //do nothing
+    }
+    
+    func onHomeTapped() {
         if var topController = UIApplication.shared.keyWindow?.rootViewController {
+            
             while let presentedViewController = topController.presentedViewController {
                 topController = presentedViewController
             }
-            if topController.view == profileView {
-                self.performSegue(withIdentifier: "profile2messagesSegue", sender: self)
+            
+            if topController.view == messagesView {
+                self.performSegue(withIdentifier: "messages2homeSegue", sender: self)
             }
             // topController should now be your topmost view controller
         }
     }
     
-    func onHomeTapped(){
-        if var topController = UIApplication.shared.keyWindow?.rootViewController {
-            while let presentedViewController = topController.presentedViewController {
-                topController = presentedViewController
-            }
-            if topController.view == profileView {
-                self.performSegue(withIdentifier: "profile2homeSegue", sender: self)
-            }
-            // topController should now be your topmost view controller
-        }
-    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        let view = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height))
-        let gradient = CAGradientLayer()
-        let top = UIColor(red:0.87, green:0.96, blue:0.27, alpha:1.0)
-        let bottom = UIColor(red:1.00, green:1.00, blue:0.92, alpha:1.0)
-        
-        gradient.frame = view.bounds
-        gradient.colors = [top.cgColor, bottom.cgColor]
-        
-        self.view.layer.insertSublayer(gradient, at: 0)
         setUpViews()
     }
     
@@ -71,6 +67,7 @@ class ProfileViewController: UIViewController, MyDelegate{
             
             ])
     }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -10,12 +10,44 @@ import UIKit
 
 protocol MyDelegate: class {
     func onProfileTapped()
+    func onMessagesTapped()
+    func onHomeTapped()
 }
 
 class HomePageViewController: UIViewController, MyDelegate {
     
+    @IBOutlet var homePageView: UIView!
+    
+    //function to segue using delegates to profile
     func onProfileTapped() {
-        self.performSegue(withIdentifier: "toProfile", sender: self)
+        if var topController = UIApplication.shared.keyWindow?.rootViewController {
+            
+            while let presentedViewController = topController.presentedViewController {
+                topController = presentedViewController
+            }
+        
+            if topController.view == homePageView {
+                self.performSegue(withIdentifier: "toProfile", sender: self)
+            }
+  
+            // topController should now be your topmost view controller
+        }
+    }
+    //function to segue using delegates to messages
+    func onMessagesTapped() {
+        if var topController = UIApplication.shared.keyWindow?.rootViewController {
+            while let presentedViewController = topController.presentedViewController {
+                topController = presentedViewController
+            }
+            if topController.view == homePageView {
+                self.performSegue(withIdentifier: "home2messagesSegue", sender: self)
+            }
+            // topController should now be your topmost view controller
+        }
+    }
+    //function to segue using delegate to home
+    func onHomeTapped() {
+         //do nothing
     }
     
     lazy var tinderCard: TinderCard = {
