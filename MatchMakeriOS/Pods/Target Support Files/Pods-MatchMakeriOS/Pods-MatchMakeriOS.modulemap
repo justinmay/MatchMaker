@@ -1,0 +1,6 @@
+framework module Pods_MatchMakeriOS {
+  umbrella header "Pods-MatchMakeriOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

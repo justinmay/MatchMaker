@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -425,13 +425,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hpZ-66-4P7">
-                                <rect key="frame" x="0.0" y="123" width="375" height="544"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hpZ-66-4P7">
+                                <rect key="frame" x="0.0" y="120" width="375" height="547"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="90" id="KgE-EV-ia8" customClass="PersonTableViewCell" customModule="MatchMakeriOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KgE-EV-ia8" id="qyL-zC-45v">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZNm-s8-NTl">
+                                                    <rect key="frame" x="15" y="0.0" width="90" height="90"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="90" id="l3n-xn-jSC"/>
+                                                        <constraint firstAttribute="width" constant="90" id="ww7-qi-af9"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gtt-7g-slu">
+                                                    <rect key="frame" x="117" y="24" width="141" height="41"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="30"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="gtt-7g-slu" firstAttribute="centerY" secondItem="qyL-zC-45v" secondAttribute="centerY" id="No2-8i-F65"/>
+                                                <constraint firstItem="gtt-7g-slu" firstAttribute="leading" secondItem="ZNm-s8-NTl" secondAttribute="trailing" constant="12" id="Rch-3s-AiN"/>
+                                                <constraint firstItem="ZNm-s8-NTl" firstAttribute="centerY" secondItem="qyL-zC-45v" secondAttribute="centerY" id="jdJ-JG-TGd"/>
+                                                <constraint firstItem="ZNm-s8-NTl" firstAttribute="leading" secondItem="qyL-zC-45v" secondAttribute="leading" constant="15" id="pwv-h0-zgq"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="userProfileImageView" destination="ZNm-s8-NTl" id="s8G-PF-i3r"/>
+                                            <outlet property="usernameLabel" destination="gtt-7g-slu" id="Df0-TV-X9i"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hpZ-66-4P7" firstAttribute="trailing" secondItem="yf2-p2-sRk" secondAttribute="trailing" id="Huq-Jf-AzX"/>
+                            <constraint firstItem="hpZ-66-4P7" firstAttribute="bottom" secondItem="yf2-p2-sRk" secondAttribute="bottom" id="NHx-bl-6aN"/>
+                            <constraint firstItem="hpZ-66-4P7" firstAttribute="leading" secondItem="yf2-p2-sRk" secondAttribute="leading" id="Vos-LF-JFb"/>
+                            <constraint firstItem="hpZ-66-4P7" firstAttribute="top" secondItem="yf2-p2-sRk" secondAttribute="top" constant="100" id="hXC-Wb-Tl0"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="yf2-p2-sRk"/>
                     </view>
                     <connections>
@@ -455,6 +495,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="eEG-06-Cr7"/>
         <segue reference="9t3-B8-z9M"/>
-        <segue reference="Xzg-KL-4Te"/>
+        <segue reference="G9h-jt-ZnZ"/>
     </inferredMetricsTieBreakers>
 </document>

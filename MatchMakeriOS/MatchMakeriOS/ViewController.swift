@@ -7,31 +7,43 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController {
 
     @IBOutlet weak var titleButtonLabel: UILabel!
-    @IBOutlet weak var userNameLabel: UILabel!
-    @IBOutlet weak var titleLabel: UILabel!
    
     override func viewDidLoad() {
         super.viewDidLoad()
-        //titleButtonLabel.textColor = UIColor(red:0.87, green:0.96, blue:0.27, alpha:1.0)
-        //userNameLabel.textColor = UIColor(red:0.87, green:0.96, blue:0.27, alpha:1.0)
-        //titleLabel.textColor = UIColor(red:0.87, green:0.96, blue:0.27, alpha:1.0)
+        setUpViews()
+        sendPostRequest()
+    }
+    
+    func sendPostRequest(){
+        let parameters = [
+            "email": "email@email.com",
+            "fname": "justin",
+            "lname": "may",
+            "password": "password"
+        ]
         
+        Alamofire.request("http://49d1dfe6.ngrok.io/register", method: .post, parameters: parameters, encoding: URLEncoding.default)
+        
+        Alamofire.request("http://49d1dfe6.ngrok.io/test", method: .post, parameters: parameters, encoding: URLEncoding.default)
+        
+        print("sent Request")
+    }
+    
+    func setUpViews() {
         let view = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height))
         let gradient = CAGradientLayer()
         let top = UIColor(red:0.87, green:0.96, blue:0.27, alpha:1.0)
         let bottom = UIColor(red:1.00, green:1.00, blue:0.92, alpha:1.0)
-        
         gradient.frame = view.bounds
         gradient.colors = [top.cgColor, bottom.cgColor]
-        
         self.view.layer.insertSublayer(gradient, at: 0)
-        // Do any additional setup after loading the view, typically from a nib.
+        titleButtonLabel.textColor = UIColor(red:0.37, green:0.34, blue:0.35, alpha:1.0)
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
