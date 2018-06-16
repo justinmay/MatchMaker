@@ -53,6 +53,7 @@ class MessagesViewController: UIViewController, MyDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.view.backgroundColor = UIColor(red:0.94, green:0.93, blue:0.79, alpha:1.0)
         setUpViews()
     }
     

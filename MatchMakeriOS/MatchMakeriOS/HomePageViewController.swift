@@ -72,6 +72,7 @@ class HomePageViewController: UIViewController, MyDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor(red:0.94, green:0.93, blue:0.79, alpha:1.0)
         setUpViews()
     }
     

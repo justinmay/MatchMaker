@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93A66A303A64F3558AF9DB29 /* Pods_MatchMakeriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABED63D8344BAD2090C8D2FA /* Pods_MatchMakeriOS.framework */; };
 		CBD9245320B781DE000E1F9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD9245220B781DE000E1F9B /* AppDelegate.swift */; };
 		CBD9245520B781DE000E1F9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD9245420B781DE000E1F9B /* ViewController.swift */; };
 		CBD9245820B781DE000E1F9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBD9245620B781DE000E1F9B /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 		CBD924B720BF0A52000E1F9B /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD924B620BF0A52000E1F9B /* TabView.swift */; };
 		CBD924BF20BF0F2A000E1F9B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD924BE20BF0F2A000E1F9B /* ProfileViewController.swift */; };
 		CBD924C120C02291000E1F9B /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD924C020C02291000E1F9B /* MessagesViewController.swift */; };
+		CBE0251220CA1C1800DFB754 /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE0251120CA1C1800DFB754 /* PersonTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		36E31DA8ADDD419B03AE3AD1 /* Pods-MatchMakeriOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatchMakeriOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-MatchMakeriOS/Pods-MatchMakeriOS.release.xcconfig"; sourceTree = "<group>"; };
+		675403D3ACA62032F8887405 /* Pods_MatchMakeriOS_MatchMakeriOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MatchMakeriOS_MatchMakeriOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		852D60B826C366616DB2E23A /* Pods-MatchMakeriOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatchMakeriOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MatchMakeriOS/Pods-MatchMakeriOS.debug.xcconfig"; sourceTree = "<group>"; };
+		ABED63D8344BAD2090C8D2FA /* Pods_MatchMakeriOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MatchMakeriOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4196695706981907ECB34D0 /* Pods-MatchMakeriOS-MatchMakeriOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatchMakeriOS-MatchMakeriOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MatchMakeriOS-MatchMakeriOSTests/Pods-MatchMakeriOS-MatchMakeriOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CB143D709E72610E4437448B /* Pods_MatchMakeriOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MatchMakeriOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBD9244F20B781DE000E1F9B /* MatchMakeriOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatchMakeriOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBD9245220B781DE000E1F9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBD9245420B781DE000E1F9B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +79,8 @@
 		CBD924B620BF0A52000E1F9B /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
 		CBD924BE20BF0F2A000E1F9B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		CBD924C020C02291000E1F9B /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		CBE0251120CA1C1800DFB754 /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
+		E55D2117300CDCCF58BDECD9 /* Pods-MatchMakeriOS-MatchMakeriOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatchMakeriOS-MatchMakeriOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MatchMakeriOS-MatchMakeriOSTests/Pods-MatchMakeriOS-MatchMakeriOSTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93A66A303A64F3558AF9DB29 /* Pods_MatchMakeriOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +109,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1EA5E09D3DA69570260C70DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABED63D8344BAD2090C8D2FA /* Pods_MatchMakeriOS.framework */,
+				675403D3ACA62032F8887405 /* Pods_MatchMakeriOS_MatchMakeriOSTests.framework */,
+				CB143D709E72610E4437448B /* Pods_MatchMakeriOSTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CBD9244620B781DE000E1F9B = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +126,8 @@
 				CBD9246620B781E0000E1F9B /* MatchMakeriOSTests */,
 				CBD9247120B781E0000E1F9B /* MatchMakeriOSUITests */,
 				CBD9245020B781DE000E1F9B /* Products */,
+				E443C7BC3ED505E7B759076C /* Pods */,
+				1EA5E09D3DA69570260C70DD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -165,6 +188,7 @@
 				CBD924AD20BDF569000E1F9B /* ButtonsView.swift */,
 				CBD924B620BF0A52000E1F9B /* TabView.swift */,
 				CBD924AE20BDF569000E1F9B /* TinderCard.swift */,
+				CBE0251120CA1C1800DFB754 /* PersonTableViewCell.swift */,
 			);
 			path = FactoryElements;
 			sourceTree = "<group>";
@@ -177,6 +201,17 @@
 			path = Actions;
 			sourceTree = "<group>";
 		};
+		E443C7BC3ED505E7B759076C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B4196695706981907ECB34D0 /* Pods-MatchMakeriOS-MatchMakeriOSTests.debug.xcconfig */,
+				E55D2117300CDCCF58BDECD9 /* Pods-MatchMakeriOS-MatchMakeriOSTests.release.xcconfig */,
+				852D60B826C366616DB2E23A /* Pods-MatchMakeriOS.debug.xcconfig */,
+				36E31DA8ADDD419B03AE3AD1 /* Pods-MatchMakeriOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -184,9 +219,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CBD9247720B781E0000E1F9B /* Build configuration list for PBXNativeTarget "MatchMakeriOS" */;
 			buildPhases = (
+				891C81E6F181AB91AFB28F37 /* [CP] Check Pods Manifest.lock */,
 				CBD9244B20B781DE000E1F9B /* Sources */,
 				CBD9244C20B781DE000E1F9B /* Frameworks */,
 				CBD9244D20B781DE000E1F9B /* Resources */,
+				ABA834C23B05ACEE1A96CD9F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -303,6 +340,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		891C81E6F181AB91AFB28F37 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MatchMakeriOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABA834C23B05ACEE1A96CD9F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MatchMakeriOS/Pods-MatchMakeriOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MatchMakeriOS/Pods-MatchMakeriOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CBD9244B20B781DE000E1F9B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -311,6 +387,7 @@
 				CBD9245520B781DE000E1F9B /* ViewController.swift in Sources */,
 				CBD9245320B781DE000E1F9B /* AppDelegate.swift in Sources */,
 				CBD9249120BD8ABE000E1F9B /* RegisterViewController.swift in Sources */,
+				CBE0251220CA1C1800DFB754 /* PersonTableViewCell.swift in Sources */,
 				CBD9248F20BD89B5000E1F9B /* WelcomeSegue2ViewController.swift in Sources */,
 				CBD924A720BDEA72000E1F9B /* HomePageViewController.swift in Sources */,
 				CBD924AF20BDF569000E1F9B /* LabelFactory.swift in Sources */,
@@ -492,7 +569,9 @@
 		};
 		CBD9247820B781E0000E1F9B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 852D60B826C366616DB2E23A /* Pods-MatchMakeriOS.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F8D8S8BR4K;
@@ -510,7 +589,9 @@
 		};
 		CBD9247920B781E0000E1F9B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36E31DA8ADDD419B03AE3AD1 /* Pods-MatchMakeriOS.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F8D8S8BR4K;

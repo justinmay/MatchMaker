@@ -12,6 +12,9 @@ class ProfileViewController: UIViewController, MyDelegate{
     
     @IBOutlet var profileView: UIView!
     
+    var images = [UIImageView]()
+    var names = [String]()
+    
     let tabs: TabView = {
         let tv = TabView()
         return tv
@@ -47,17 +50,22 @@ class ProfileViewController: UIViewController, MyDelegate{
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        names += ["anand","justin"]
         // Do any additional setup after loading the view.
+        setUpGradient()
+        setUpViews()
+    }
+    
+    func setUpGradient(){
         let view = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height))
         let gradient = CAGradientLayer()
         let top = UIColor(red:0.87, green:0.96, blue:0.27, alpha:1.0)
-        let bottom = UIColor(red:1.00, green:1.00, blue:0.92, alpha:1.0)
+        let bottom = UIColor(red:0.94, green:0.93, blue:0.79, alpha:1.0)
         
         gradient.frame = view.bounds
         gradient.colors = [top.cgColor, bottom.cgColor]
         
         self.view.layer.insertSublayer(gradient, at: 0)
-        setUpViews()
     }
     
     func setUpViews() {

@@ -9,10 +9,10 @@ import UIKit
 
 class TinderCard: BaseView {
     let profileImageView = ImageViewFactory.standardImageView(image: #imageLiteral(resourceName: "jynerso"), cornerRadius: 0, interactionEnabled: true, contentMode: .scaleAspectFill, sizeToFit: false).new
-    let friendsIconView = ImageViewFactory.standardImageView(image: #imageLiteral(resourceName: "jynerso"), cornerRadius: 0, interactionEnabled: false, contentMode: .scaleAspectFill, sizeToFit: false).new
+    let friendsIconView = ImageViewFactory.standardImageView(image: #imageLiteral(resourceName: "personBlack"), cornerRadius: 0, interactionEnabled: false, contentMode: .scaleAspectFill, sizeToFit: false).new
     let containerView: BaseView = {
         let v = BaseView()
-        v.backgroundColor = .white
+        v.backgroundColor = UIColor(red:0.87, green:0.96, blue:0.27, alpha:1.0)
         v.layer.cornerRadius = 10.0
         v.layer.borderWidth = 0.5
         v.layer.borderColor = UIColor.gray.cgColor
@@ -25,8 +25,8 @@ class TinderCard: BaseView {
         return v
     }()
     
-    let nameLabel = LabelFactory.standardLabel(text: "Jyn Erso", textColor: .gray, fontStyle: .headline, textAlignment: .left, sizeToFit: true, adjustToFit: true).new
-    let workLabel = LabelFactory.standardLabel(text: "Member of the Alliance to Restore the Republic", textColor: .gray, fontStyle: .subheadline, textAlignment: .left, sizeToFit: true, adjustToFit: true).new
+    let nameLabel = LabelFactory.standardLabel(text: "Jyn Erso", textColor: .black, fontStyle: .headline, textAlignment: .left, sizeToFit: true, adjustToFit: true).new
+    let workLabel = LabelFactory.standardLabel(text: "Member of the Alliance to Restore the Republic", textColor: .black, fontStyle: .subheadline, textAlignment: .left, sizeToFit: true, adjustToFit: true).new
     
     override func setUpViews() {
         addSubview(containerView)
