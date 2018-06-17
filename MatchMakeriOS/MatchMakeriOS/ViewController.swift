@@ -8,15 +8,17 @@
 
 import UIKit
 import Alamofire
+import SendBirdSDK
 
 class ViewController: UIViewController {
 
     @IBOutlet weak var titleButtonLabel: UILabel!
    
     override func viewDidLoad() {
+        SBDMain.initWithApplicationId("7EACC609-7836-41AC-8F5D-531161C0C05C")
         super.viewDidLoad()
         setUpViews()
-        sendPostRequest()
+        //sendPostRequest()
     }
     
     func sendPostRequest(){
@@ -27,9 +29,9 @@ class ViewController: UIViewController {
             "password": "password"
         ]
         
-        Alamofire.request("http://49d1dfe6.ngrok.io/register", method: .post, parameters: parameters, encoding: URLEncoding.default)
+        Alamofire.request("http://cbc7eb96.ngrok.io/register", method: .post, parameters: parameters, encoding: URLEncoding.default)
         
-        Alamofire.request("http://49d1dfe6.ngrok.io/test", method: .post, parameters: parameters, encoding: URLEncoding.default)
+        Alamofire.request("http://cbc7eb96.ngrok.io/test", method: .post, parameters: parameters, encoding: URLEncoding.default)
         
         print("sent Request")
     }
