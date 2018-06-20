@@ -1,5 +1,4 @@
 target 'MatchMakeriOS' do
 	use_frameworks!
 	pod 'Alamofire'
-	pod 'SendBirdSDK'
 end
