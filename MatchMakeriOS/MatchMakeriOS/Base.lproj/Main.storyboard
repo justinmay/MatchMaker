@@ -203,6 +203,12 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="invalid password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9lv-eL-uR4">
+                                <rect key="frame" x="142.5" y="298.5" width="90.5" height="16.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="12"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhiteBall" translatesAutoresizingMaskIntoConstraints="NO" id="W6T-85-ZKD">
                                 <rect key="frame" x="67" y="50" width="240" height="128"/>
                                 <constraints>
@@ -210,6 +216,12 @@
                                     <constraint firstAttribute="height" constant="128" id="T6A-Kc-sTD"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="invalid email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOb-kP-DcM">
+                                <rect key="frame" x="154" y="327.5" width="67.5" height="16.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="12"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="GqD-Ne-wXS">
                                 <rect key="frame" x="0.0" y="357" width="375" height="260"/>
                                 <subviews>
@@ -253,7 +265,7 @@
                                                     <constraint firstAttribute="width" constant="25" id="dKa-y0-20h"/>
                                                 </constraints>
                                             </imageView>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9K7-ED-Bkw">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name space Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9K7-ED-Bkw">
                                                 <rect key="frame" x="150" y="0.0" width="225" height="25"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -312,7 +324,7 @@
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="wHt-UZ-HyJ" kind="show" id="aQR-65-IMz"/>
+                                                    <action selector="registerButtonClick:" destination="dc4-fF-L46" eventType="touchUpInside" id="xJ0-gu-WzE"/>
                                                 </connections>
                                             </button>
                                             <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NyE-Sz-6Kg">
@@ -332,17 +344,27 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="GqD-Ne-wXS" firstAttribute="centerX" secondItem="Cte-Q5-5wQ" secondAttribute="centerX" id="2h7-TZ-u5G"/>
+                            <constraint firstItem="GqD-Ne-wXS" firstAttribute="top" secondItem="fOb-kP-DcM" secondAttribute="bottom" constant="13" id="52j-H8-Vbh"/>
                             <constraint firstItem="Rwa-qz-myh" firstAttribute="centerX" secondItem="Cte-Q5-5wQ" secondAttribute="centerX" id="F6b-LT-ley"/>
                             <constraint firstItem="W6T-85-ZKD" firstAttribute="top" secondItem="Qfi-vV-c6E" secondAttribute="top" constant="30" id="I9d-tb-nWZ"/>
+                            <constraint firstItem="9lv-eL-uR4" firstAttribute="centerX" secondItem="Cte-Q5-5wQ" secondAttribute="centerX" id="Ns1-QA-n5m"/>
                             <constraint firstItem="GqD-Ne-wXS" firstAttribute="bottom" secondItem="Qfi-vV-c6E" secondAttribute="bottom" constant="-50" id="Ooj-NI-nSH"/>
                             <constraint firstItem="W6T-85-ZKD" firstAttribute="top" secondItem="Qfi-vV-c6E" secondAttribute="top" constant="30" id="Pdy-Zt-IIJ"/>
                             <constraint firstItem="Rwa-qz-myh" firstAttribute="top" secondItem="W6T-85-ZKD" secondAttribute="bottom" constant="50" id="emb-KC-dh5"/>
+                            <constraint firstItem="fOb-kP-DcM" firstAttribute="top" secondItem="9lv-eL-uR4" secondAttribute="bottom" constant="13" id="hVm-K3-qwB"/>
                             <constraint firstItem="W6T-85-ZKD" firstAttribute="centerX" secondItem="Cte-Q5-5wQ" secondAttribute="centerX" id="odY-9G-adH"/>
+                            <constraint firstItem="fOb-kP-DcM" firstAttribute="centerX" secondItem="Cte-Q5-5wQ" secondAttribute="centerX" id="pcd-md-Fn9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Qfi-vV-c6E"/>
                     </view>
                     <connections>
+                        <outlet property="emailLabel" destination="ZxA-Z8-YoM" id="r4p-WR-BjV"/>
+                        <outlet property="invalidEmailLabel" destination="fOb-kP-DcM" id="TW0-vn-JSC"/>
+                        <outlet property="invalidpasswordLabel" destination="9lv-eL-uR4" id="Gbe-Vd-mbz"/>
+                        <outlet property="passwordLable" destination="2lX-9o-vjT" id="Gtl-91-xUa"/>
                         <outlet property="registerLabel" destination="Rwa-qz-myh" id="lzZ-hh-qwl"/>
+                        <outlet property="usernameLabel" destination="9K7-ED-Bkw" id="2V4-WY-zvW"/>
+                        <segue destination="wHt-UZ-HyJ" kind="show" identifier="register2homeSegue" id="Yvu-uB-9Cb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mIl-K3-HkB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -495,6 +517,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="eEG-06-Cr7"/>
         <segue reference="9t3-B8-z9M"/>
-        <segue reference="G9h-jt-ZnZ"/>
+        <segue reference="Yvu-uB-9Cb"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -1,16 +1,20 @@
 PODS:
   - Alamofire (4.7.2)
+  - SendBirdSDK (3.0.96)
 
 DEPENDENCIES:
   - Alamofire
+  - SendBirdSDK
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - SendBirdSDK
 
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  SendBirdSDK: e1247b1284a48ffa6f34f554b6d645ec34d4ff74
 
-PODFILE CHECKSUM: 36c143fb416587e4b622125c1536dff36e0f7ee8
+PODFILE CHECKSUM: d9e18bcff66e5a86dfc67843b671739d7b91135b
 
 COCOAPODS: 1.5.2
