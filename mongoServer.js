@@ -19,6 +19,10 @@ var server = app.listen(3000, function(){
 	console.log("listening to requests on 3000");
 });
 
+app.post('/test', function(req,res){
+	console.log("made it to test");
+	res.send("made it");
+});
 
 // Register a new person
 app.post('/register', function(req,res){
@@ -40,7 +44,7 @@ app.post('/register', function(req,res){
 
 		var person = {email: email, fname: fname, lname: lname, password: password };
 
-		data.collection("TennisMatches").ensureIndex( { email: 1 }, { unique: true, sparse: true } )
+		// data.collection("TennisMatches").ensureIndex( { email: 1 }, { unique: true, sparse: true } );
 		data.collection("TennisMatches").insertOne(person, function(err, res){
 			if (err) throw err;
 			console.log("registered one person");
