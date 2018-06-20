@@ -29,9 +29,9 @@ class ViewController: UIViewController {
             "password": "password"
         ]
         
-        Alamofire.request("http://cbc7eb96.ngrok.io/register", method: .post, parameters: parameters, encoding: URLEncoding.default)
+        Alamofire.request("http://280dc896.ngrok.io/register", method: .post, parameters: parameters, encoding: URLEncoding.default)
         
-        Alamofire.request("http://cbc7eb96.ngrok.io/test", method: .post, parameters: parameters, encoding: URLEncoding.default)
+        Alamofire.request("http://280dc896.ngrok.io/test", method: .post, parameters: parameters, encoding: URLEncoding.default)
         
         print("sent Request")
     }
