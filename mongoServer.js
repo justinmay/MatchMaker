@@ -11,7 +11,8 @@ const bcrypt = require('bcrypt');
 
 // Formatting
 var bodyParser = require('body-parser');
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
 // Create the server
 // Listening on port 3000
@@ -21,7 +22,7 @@ var server = app.listen(3000, function(){
 
 app.post('/test', function(req,res){
 	console.log("made it to test");
-	res.send("made it");
+	res.send(JSON.stringify("{text: 'hello world'}"));
 });
 
 // Register a new person
@@ -37,6 +38,7 @@ app.post('/register', function(req,res){
 	// var losses;
 	// var location; - use phone's location
 	// var image;
+	var body;
 	MongoClient.connect(url, function(err, db){
 		if (err) throw err;
 
@@ -46,14 +48,20 @@ app.post('/register', function(req,res){
 
 		// data.collection("TennisMatches").ensureIndex( { email: 1 }, { unique: true, sparse: true } );
 		data.collection("TennisMatches").insertOne(person, function(err, res){
-			if (err) throw err;
-			console.log("registered one person");
+			if (!res) {
+				console.log("someone with that username already signed up!");
+				body = JSON.stringify("{result: false}");
+			}
+			else {
+				console.log("registered one person successfully");
+				body = JSON.stringify("{result: true}")
+			}
 		});
 
 		db.close();
 	});
 
-	res.send(""); //send back unique ID
+	res.send(body); //send back unique ID
 });
 
 // Login user with email
@@ -61,7 +69,6 @@ app.post('/login', function(req,res){
 	var email = req.body.email;
 	var fname = req.body.passAtt;
 	var passSav
-	var valid;
 
 	MongoClient.connect(url, function(err, db){
 		if (err) throw err;
@@ -69,19 +76,27 @@ app.post('/login', function(req,res){
 		var data = db.db("MatchMaker");
 
 		// Check if email exists
-		if((passSav = db.db("MatchMaker").findOne({email: email}, {password: 1})) == null){
-			valid = true;
-			db.close();
-			res.end(valid);
-		} 
+		if((passSav = db.db("MatchMaker").findOne({email: email}, {password: 1})) === null){
+			console.log("logged in successfully");
 
-		// Check password
-		valid = bcrypt.compareSync(passAtt, passSav);
+			//check password
+			if( valid = bcrypt.compareSync(passAtt, passSav)){
+				body = JSON.stringify("{result: true}")
+			}
+			else{
+				body = JSON.stringify("{result: false}");
+			}
+		}
+		else{
+			console.log("that username or password does not exist");
+			body = JSON.stringify("{result: false}");
+
+		}
 
 		db.close();
 	});
 
-	res.send(valid);
+	res.send(body);
 });
 
 
