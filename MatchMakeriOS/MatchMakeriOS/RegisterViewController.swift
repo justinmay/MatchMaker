@@ -32,7 +32,7 @@ class RegisterViewController: UIViewController {
                 sendPostRequest(email: email!, password: password!, fname: firstName, lname: lastName)
                 //setting up ChatBird
                 SBDMain.connect(withUserId: email!, completionHandler: { (user, error) in
-                    SBDMain.updateCurrentUserInfo(withNickname: fullname, profileUrl: "https://www.google.com/imgres?imgurl=http://www.gstatic.com/tv/thumb/persons/1805/1805_v9_bb.jpg&imgrefurl=http://google.com/search?tbm%3Disch%26q%3DDonald%2520J.%2520Trump&h=1440&w=1080&tbnid=fkDozH2oxtMs9M:&q=trump&tbnh=186&tbnw=139&usg=__gdLU87RV_aXKg2gIdNzNoFR0KTI%3D&vet=10ahUKEwirkbTGodnbAhUK9YMKHVRrBB8Q_B0I6QEwIQ..i&docid=kWEIg_incgkSTM&itg=1&sa=X&ved=0ahUKEwirkbTGodnbAhUK9YMKHVRrBB8Q_B0I6QEwIQ", completionHandler: { (error) in
+                    SBDMain.updateCurrentUserInfo(withNickname: fullname, profileImage: UIImagePNGRepresentation(#imageLiteral(resourceName: "personBlack")), completionHandler: { (error) in
                         // ...
                     })
                 })
@@ -71,7 +71,7 @@ class RegisterViewController: UIViewController {
             "lname": lname,
             "password": password
         ]
-        Alamofire.request("http://280dc896.ngrok.io/register", method: .post, parameters: parameters, encoding: URLEncoding.default)
+        Alamofire.request("http://47123a54.ngrok.io/register", method: .post, parameters: parameters, encoding: URLEncoding.default)
         
         print("sent Request: Register")
     }
