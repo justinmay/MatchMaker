@@ -18,22 +18,27 @@ class ViewController: UIViewController {
         SBDMain.initWithApplicationId("7EACC609-7836-41AC-8F5D-531161C0C05C")
         super.viewDidLoad()
         setUpViews()
-        //sendPostRequest()
+        sendPostRequest()
     }
     
     func sendPostRequest(){
         let parameters = [
-            "email": "email@email.com",
-            "fname": "justin",
-            "lname": "may",
-            "password": "password"
+            "test": "email@email.com",
         ]
-        
-        Alamofire.request("http://280dc896.ngrok.io/register", method: .post, parameters: parameters, encoding: URLEncoding.default)
-        
-        Alamofire.request("http://280dc896.ngrok.io/test", method: .post, parameters: parameters, encoding: URLEncoding.default)
-        
-        print("sent Request")
+        print("ping")
+        Alamofire.request("http://47123a54.ngrok.io/test", method: .post, parameters: parameters, encoding: JSONEncoding.default)
+            .responseJSON { response in
+                print(response)
+                //to get status code
+                if let status = response.response?.statusCode {
+                    switch(status){
+                    case 201:
+                        print("pong")
+                    default:
+                        print("error with response status: \(status)")
+                    }
+                }
+        }
     }
     
     func setUpViews() {
